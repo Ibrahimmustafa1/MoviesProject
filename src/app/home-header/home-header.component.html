@@ -1,0 +1,16 @@
+<section class="vh-50 d-flex align-items-center">
+    <div class="container py-5">
+        <h3 class="mb-5">Trending Movies</h3>
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let movie of movies">
+                <ng-template carouselSlide [id]="movie.id">
+                    <a [routerLink]="['/TrendingMovieDetalis',movie.id]">
+                        <img [src]="imgpre+movie.poster_path" alt="" class='w-100 mb-2'>
+                    </a>
+                </ng-template>
+            </ng-container>
+
+        </owl-carousel-o>
+
+    </div>
+</section>

@@ -1,0 +1,48 @@
+
+@media only screen and (max-width: 650px) {
+    nav{
+        position: absolute !important;
+    }
+    // .form-inline{
+    //     display: flex !important;
+    //     align-items: center !important;
+    //     flex-direction: column-reverse !important;
+    //     width: 100% !important;
+    //     input{
+    //         width: 90% !important;
+    //     }
+    // }
+    a{
+        margin-top: 10px;
+    }
+
+  
+  }
+  nav{
+      background-color:#131722;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 5;
+  }
+
+  li{
+      margin-left: 4px;
+      text-align: center;
+  }
+  a{
+    padding: 13px;
+  }
+  a:hover{
+
+      background-color:#373f57
+  }
+  .active-link{
+    background-color:#373f57
+}
+span{
+    color: white !important;
+    font-size: 18px;
+    padding: 13px;
+}

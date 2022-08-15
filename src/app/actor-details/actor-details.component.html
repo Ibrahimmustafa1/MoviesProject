@@ -1,0 +1,14 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-3">
+            <img [src]="imgpre+actorDetails?.profile_path" alt="" class="w-100">
+        </div>
+
+        <div class="col-md-9">
+            <h3>{{actorDetails?.name}}</h3>
+            <h6 class="h3" >also_known_as : {{actorDetails?.also_known_as[0]}} </h6>
+            <p>{{actorDetails?.birthday}}</p>
+            <p class="lead" >{{actorDetails?.biography}}</p>
+        </div>
+    </div>
+</div>

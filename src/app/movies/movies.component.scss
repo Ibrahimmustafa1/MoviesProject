@@ -1,0 +1,66 @@
+.line1{
+  background-color: rgb(92, 86, 86);
+  width: 10%;
+  height: 2px;
+}
+
+.line2 {
+  background-color: rgb(92, 86, 86);
+  width: 40%;
+  height: 2px;
+}
+
+.ss{
+  position:relative;
+}
+
+.vote{
+  position:absolute;
+  background-color:red;
+  top: 0;
+  padding:5px;
+  font-weight: 700;
+  right: 0px;
+}
+
+.col-lg-4:hover {
+  .line1 {
+    width: 30%;
+  }
+
+  .line2 {
+    width: 70%;
+  }
+}
+
+//for every page link
+.my-pagination ::ng-deep .ngx-pagination a:hover,
+.ngx-pagination button:hover {
+  background:#373f57;
+}
+.my-pagination ::ng-deep .ngx-pagination a,
+.ngx-pagination button {
+  margin-top: 10px;
+}
+
+i {
+  position: absolute;
+  top: 50px;
+  font-size: 20px;
+  right: 0;
+  cursor: pointer;
+  color: red !important;
+}
+
+@media only screen and (max-width: 650px) {
+  .ss {
+    width:70% !important;
+  }
+}
+
+.swal2-container {
+  z-index: 99999999999;
+}
+.swal2 {
+  font-size: 2rem;
+  }

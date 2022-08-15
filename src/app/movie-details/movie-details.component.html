@@ -1,0 +1,22 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-3">
+            <img [src]="imgpre+movie_details?.poster_path" alt="" class='w-100 mb-2'>
+        </div>
+        <div class="col-md-9 d-flex justify-content-center">
+            <div class="lead">
+                <h3 class="mb-3">{{movie_details?.title}}</h3>
+                <p>{{movie_details?.release_date}}</p>
+                <div class="d-flex flex-wrap">
+                    <p class='py-2 mr-1'>genres :</p>
+                    <p *ngFor='let genre of movie_details?.genres' class="btn-outline-info p-2 rounded cursor">{{genre.name}}</p>
+                </div>
+                <p>Imdb : {{movie_details?.vote_average}}<i class="fab fa-imdb mx-2"></i></p>
+                <p>Status : <span class="mx-2">{{movie_details?.status}}</span></p>
+                <p>Description :</p>
+                <p>{{movie_details?.overview}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+$bgcolor:#131722;
+$lightbgcolor:#24baef;
+$bgtrans:rgba(36,186,239,0.6);
+$fontcolor:#fff;
+$bordercolor:#a8a8a83d;
+$borderheight:1px;
+$secondcolor:#949cb0;
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+// html{
+//     filter: invert(1);
+// }
+
+body {
+    background-image: url("../src/assets/thumb-1920-591596.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    color:$fontcolor;
+}
+// audio{
+//     display:none;
+// }
+.layer{
+    height:100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ background-color: rgba(1,5,6,0.6);
+ z-index: -1;
+}
+.navbar-toggler-icon{
+    padding-left: 50px !important;
+    background-color:#373f57 !important;
+}
+a ,i{
+    color: $fontcolor !important;
+    font-size: 18px;
+    text-decoration: none;
+    &:hover{
+    
+            color: $fontcolor;
+            font-size: 18px;
+            text-decoration: none;
+        
+        
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body{
+        background-image: none;
+        background-color:#131722 !important; 
+    }
+  
+  }

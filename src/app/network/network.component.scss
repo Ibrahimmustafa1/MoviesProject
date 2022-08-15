@@ -1,0 +1,26 @@
+.line1{
+  background-color: rgb(92, 86, 86);
+    width:10%;
+    height:2px;
+}
+.line2{
+  background-color: rgb(92, 86, 86);
+    width:40%;
+    height:2px;
+}
+.col-md-4:hover {
+    .line1 {
+      width: 30%;
+    }
+  
+    .line2 {
+      width: 70%;
+    }
+  }
+
+  
+  @media only screen and (max-width: 650px) {
+    .ss {
+      width:64% !important;
+    }
+  }

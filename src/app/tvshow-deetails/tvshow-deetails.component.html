@@ -1,0 +1,23 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-3">
+            <img [src]="imgpre+tvdata?.poster_path" alt="" class='w-100 mb-2'>
+        </div>
+        <div class="col-md-9 d-flex justify-content-center">
+            <div class="lead">
+                <h3 class="mb-3">{{tvdata?.name}}</h3>
+                <p>First_Air_Date :{{tvdata?.first_air_date}} </p>
+                <p>Last_Air_Date :{{tvdata?.last_air_date}}</p>
+                <div class="d-flex flex-wrap">
+                    <p class='py-2 mr-1'>genres :</p>
+                    <p *ngFor='let genre of tvdata?.genres' class="btn-outline-info p-2 rounded cursor">{{genre.name}}</p>
+                </div>
+                <p>Imdb : {{tvdata?.vote_average}}<i class="fab fa-imdb mx-2"></i></p>
+                <p>Status : <span class="mx-2">{{tvdata?.status}}</span></p>
+                <p>Description :</p>
+                <p>{{tvdata?.overview}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>

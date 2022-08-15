@@ -1,0 +1,28 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="{{movieDetalis?.data.movie.medium_cover_image}}" class="w-100" alt="">
+        </div>
+        <div class="col-md-9 d-flex justify-content-center">
+            <div class="lead">
+                <h3 class="mb-3">{{movieDetalis?.data.movie.title}}</h3>
+                <p>{{movieDetalis?.data.movie.year}}</p>
+                <div class="d-flex flex-wrap">
+                    <p class='py-2 mr-1'>genres :</p>
+                    <p *ngFor='let genre of movieDetalis?.data.movie.genres' class="btn-outline-info p-2 rounded cursor">
+                        {{genre}}</p>
+                </div>
+                <div class='ss d-flex flex-wrap align-items-center'>
+                    <p>Download :</p>
+                    <a *ngFor='let torrent of movieDetalis?.data.movie.torrents' href="{{torrent.url}}"
+                        class='btn-success px-1 py-1 mx-2 rounded mb-2'>
+                        {{torrent.quality}} {{torrent.type}}</a>
+                </div>
+                <p>Imdb : {{movieDetalis?.data.movie.rating}}<i class="fab fa-imdb mx-2"></i></p>
+                <p>Description :</p>
+                <p>{{movieDetalis?.data.movie.description_full}}</p>
+            </div>
+        </div>
+    </div>
+
+</div>
