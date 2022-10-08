@@ -8,7 +8,9 @@ import { BehaviorSubject, Observable, observable } from 'rxjs';
 })
 export class TrendingService {
   val = new BehaviorSubject(null);
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) { 
+    console.log("From Service ")
+  }
   getTrending(x: string): Observable<any> {
 
     return this.http.get(`https://api.themoviedb.org/3/trending/${x}/week?api_key=f1aca93e54807386df3f6972a5c33b50`)
